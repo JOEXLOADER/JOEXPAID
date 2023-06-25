@@ -1136,6 +1136,7 @@ Toggles.ChatGui:OnChanged(function(C)
         Chat.Visible = false
         HideChat = true
         repeat
+            task.wait(2)
             Chat.Visible = false
         until not HideChat
     else
